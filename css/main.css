@@ -148,7 +148,7 @@ ul {
     float: none;
     width: auto;
 }
-.day{
+.article{
     min-height: 10px;
     position: relative;
     max-width: 830px;
@@ -157,7 +157,7 @@ ul {
     border-bottom: 1px solid #ebf2f6;
     word-wrap: break-word;
 }
-.dayTitle{
+.articleTitle{
     display: none;
     border: 1px solid #21759b;
     background: azure;
