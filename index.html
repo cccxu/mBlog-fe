@@ -1,389 +1,302 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-cn">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>全局样式</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-media.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="editormd/css/editormd.preview.css">
+    <title>mBlog</title>
 </head>
-<body style="overflow: auto" class>
-
-<div id="MathJax_Message" style="display: none;"></div>
-
-<div id="page_begin">
-    <div id="loading" style="display:none;"></div>
-</div>
-
-
-<div id="home" style="margin-top: 610px;">
-    <div id="header">
-        <div class="main-header" >
-
+<body>
+<div class="container">
+    <!--顶部黑条-->
+    <div class="headband"></div>
+    <!--左侧logo和导航-->
+    <div class="header">
+        <div class="header-inner">
+            <div class="site-brand-container">
+                <div class="site-meta">
+                    <div>
+                        <a href="/" class="brand">
+                            <span class="logo-line-before"><i></i></span>
+                            <span class="site-title">mBlog</span>
+                            <span class="logo-line-after"><i></i></span>
+                        </a>
+                    </div>
+                    <div>
+                        <h2 class="site-subtitle">简洁的个人技术博客</h2>
+                    </div>
+                </div>
+<!--                导航栏自适应，todo-->
+                <div class="site-nav-toggle"></div>
+            </div>
+            <div class="site-nav">
+                <ul class="menu" id="menu">
+                    <li class="menu-item menu-item-active">
+                        <a href="/">
+                            <i class="iconfont icon-paihangbang"></i> 阅读排行</a></li>
+                    <li class="menu-item">
+                        <a href="/">
+                            <i class="iconfont icon-fenlei"></i> 分类</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/">
+                            <i class="iconfont icon-biaoqian"></i> 标签</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/">
+                            <i class="iconfont icon-guidang"></i> 归档</a>
+                    </li>
+                    <li class="menu-item">
+                        <a role="button" id="search">
+                            <i class="iconfont icon-tubiaozhizuomoban"></i> 搜索</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-search"></div>
         </div>
-<!--        <div id="blogTitle">-->
-<!--            <h1>写书</h1>-->
-<!--            <h2>-->
-
-<!--            </h2>-->
-<!--        </div>-->
-<!--        <div id="navigator">-->
-<!--            <ul id="navList">-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_sithome" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_myhome" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_newpost" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_contact" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_rss" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a id="blog_nav_admin" class="menu" href="#">网站</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="blogStats">-->
-<!--            <span id="stats_post_count">随笔</span>-->
-<!--            <span id="stats_aticle_count">随笔</span>-->
-<!--            <span id="stats_comment_count">随笔</span>-->
-<!--        </div>-->
     </div>
 
-    <div id="main">
-        <div id="mainContent">
-            <div class="forFlow">
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
+    <!--主体-->
+    <div class="main stickem-container">
+        <div class="main-inner">
+<!--            右侧文章列表等-->
+            <div class="content-wrap">
+                <div class="content">
+                    <div class="posts-expand">
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-0" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-1" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-2" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-3" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-4" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-5" class="post-body-brief"></div>
+                            </div>
+                        </article>
+                        <article class="post-block">
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    文章标题示例
+                                </h2>
+                                <div class="post-meta">
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">创建于：</span>
+                                        <time >2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">最后编辑于：</span>
+                                        <time>2019-12-9</time>
+                                    </span>
+                                    <span class="post-meta-item">
+                                        <span class="post-meta-item-icon"><i></i></span>
+                                        <span class="post-meta-item-text">阅读数：</span>
+                                        <span class="post-meta-item-text">1000</span>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-body">
+                                <div id="post-body-brief-6" class="post-body-brief"></div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="articleTitle">
-                        <a href="#">2019,12,4</a>
-                    </div>
-                    <div class="postTitle">
-                        <a class="postTitle1" href="#">[置顶]</a>
-                    </div>
-                    <div class="postCon">
-                        <div class="desc">
-                            摘要：Java基础 "Java 7 和 Java 8 中的 HashMap原理解析" "Java7 和 Java8 中的 ConcurrentHashMap 原理解析" "Java中自定义注解" "Java函数式编程和lambda表达式" "TCP三次握手原理，你真的了解吗？" "“三次握手，四次挥手”你
-                            <a href="#">阅读全文</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="postDesc">
-                            posted @ 2019-11-11 10:08 JaJian 阅读 (210) 评论 (0)
-
-                            <a href="#" rel="nofollow">编辑</a>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="topicListFooter">
-                    <a href="#">下一页</a>
+                    <nav class="pagination">
+                        <a href="/page/2" class="extend next"><i class="iconfont icon-iconfront-"></i></a>
+                        <span class="page-number current">1</span>
+                        <a href="/page/2" class="page-number">2</a>
+                        <span class="space">...</span>
+                        <a href="/page/7/" class="page-number">7</a>
+                        <a href="/page/2" class="extend next"><i class="iconfont icon-iconfront-1"></i></a>
+                    </nav>
                 </div>
             </div>
-
-        </div>
-        <div id="sideBar">
-            <div id="sideBarMain">
-                <div id="sideBar_new" class="newItem">
-                    <div id="blog_new">
-                        <div class="main-header" >
-
-                        </div>
-                    </div>
+            <!--    悬浮站点信息-->
+            <aside class="sidebar">
+                <div id="sidebar-inner" class="sidebar-inner stickem">
+                    aaa
                 </div>
+            </aside>
+        </div>
+    </div>
+    <!--底部信息-->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="copyright">© 2019 - 2020 ♥ mBlog</div>
+            <div class="footer-custom">
+                Server side source code
+                <a class="link" href="https://gitee.com/cccxu/mBlog">here</a>
+                <br/>
+                Client side source code
+                <a class="link" href="https://github.com/cccxu/mBlog-fe">here</a>
             </div>
         </div>
-
-    </div>
-    <div class="clear"></div>
-    <div id="footer">
-        <div class="footer-image"></div>
-        "
-        Copyright © 2019
-        "
-        <br>
-        <span id="poweredby"></span>
-    </div>
-
-
-
+    </footer>
 </div>
 
-<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
-<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
-<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/circle-magic.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="editormd/editormd.js"></script>
+<script src="editormd/lib/marked.min.js"></script>
+<script src="editormd/lib/prettify.min.js"></script>
 <script src="js/low-Poly.js"></script>
+<script src="js/jquery.stickem.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

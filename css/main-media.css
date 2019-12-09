@@ -1,0 +1,32 @@
+@media (min-width: 1600px) {
+    .main-inner {
+        width: 73%;
+    }
+    .header-inner {
+        width: 73%;
+    }
+    .footer-inner {
+        width: 73%;
+    }
+    .header {
+        width: 73%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-inner {
+        width: 1160px;
+    }
+    .header-inner {
+        width: 240px;
+    }
+    .footer-inner {
+        width: 1160px;
+    }
+    .post-body {
+        font-size: 1.125em;
+    }
+    .header {
+        width: 1160px;
+    }
+}
